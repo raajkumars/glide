@@ -1,7 +1,7 @@
 [
     {
       "kind": "column",
-      "name": "ConverUnit",
+      "name": "Convert Unit",
       "description": "Converts a measurement from one unit to another.",
       "author": "Raajkumar Subrmaniam <raajkumars@gmail.com>",
       "params": [
