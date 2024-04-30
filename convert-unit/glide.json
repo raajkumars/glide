@@ -1,0 +1,28 @@
+[
+    {
+      "kind": "column",
+      "name": "ConverUnit",
+      "description": "Converts a measurement from one unit to another.",
+      "author": "Raajkumar Subrmaniam <raajkumars@gmail.com>",
+      "params": [
+        {
+          "name": "quantity",
+          "displayName": "Quantity",
+          "type": "number"
+        },
+        {
+          "name": "fromUnit",
+          "displayName": "From Unit",
+          "type": "string"
+        },
+        {
+          "name": "toUnit",
+          "displayName": "To Unit",
+          "type": "string"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    }
+  ]
