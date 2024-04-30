@@ -59,6 +59,3 @@ const unitConverter = (function() {
 
     return UnitConverter;
 })();
-
-const converter = new unitConverter(p1, p2);
-return converter.as(p3).val()
