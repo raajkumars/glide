@@ -45,16 +45,10 @@
         // Get the to unit element.
         var toUnit = document.getElementById("toUnit");
 
-        // Construct the message
-        var message = {
-          action: "convertUnits",
-          inputValue: inputValue,
-          fromUnit: fromUnit,
-          toUnit: toUnit
-        };
+        // Get the result element.
+        var result = document.getElementById("result");
 
-        // Post the message to the Glide app
-        window.parent.postMessage(message, "*");
+        result.innerText = window.function(inputValue, fromUnit, toUnit);
       }
     </script>
 
