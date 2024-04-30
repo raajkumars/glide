@@ -18,7 +18,13 @@ const unitConverter = (function() {
 
     UnitConverter.prototype.val = function() {
         const target = table[this.targetUnit];
+        if (!target) {
+            throw new Error('Unknown target unit "' + this.targetUnit + '"');
+        }
         const current = table[this.currentUnit];
+        if (!current) {
+            throw new Error('Unknown current unit "' + this.currentUnit + '"');
+        }
         if (target.base !== current.base) {
             throw new Error('Incompatible units; cannot convert from "' + this.currentUnit + '" to "' + this.targetUnit + '"');
         }
