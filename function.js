@@ -1,7 +1,7 @@
 // The function here takes the parameters that you
 // have declared in the `glide.json` file, in the
 // same order.
-window.convertUnit = function (qty, fromUnit, toUnit) {
+window.function = function (qty, fromUnit, toUnit) {
     // This is a simple example of a function that
     // converts units.
     //
