@@ -9,6 +9,6 @@ window.function = (qty, fromUnit, toUnit) => {
     // @param {string} fromUnit The unit to convert from.
     // @param {string} toUnit The unit to convert to.
     // @returns {number} The converted quantity.
-    //const converter = new unitConverter(qty, fromUnit);
-    return 100;
+    const converter = new unitConverter(qty, fromUnit);
+    return converter.as(toUnit).val();
 }
