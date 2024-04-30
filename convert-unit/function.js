@@ -12,9 +12,9 @@ window.function = (quantity, fromUnit, toUnit) => {
     // For each parameter, its `.value` contains
     // either its value in the type you've declared,
     // or it's `undefined`.
-    const quantity = quantity.value ?? 0;
-    const fromUnit = lowerCase(fromUnit.value);
-    const toUnit = lowerCase(toUnit.value);
+    quantity = quantity.value ?? 0;
+    fromUnit = lowerCase(fromUnit.value);
+    toUnit = lowerCase(toUnit.value);
     if (fromUnit === toUnit) {
         return quantity;
     }
