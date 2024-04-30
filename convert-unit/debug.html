@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Glide Unit Converter</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/mathjs@12.4.2/lib/browser/math.js"></script>
+    <script src="function.js"></script>
+    <script src="../driver.js"></script>
+
+    <div>
+      <label for="inputValue">Enter a value:</label>
+      <input type="number" id="inputValue">
+    </div>
+
+    <div>
+      <label for="fromUnit">From unit:</label>
+      <select id="fromUnit">
+        <option value="m">Meter</option>
+        <option value="km">Kilometer</option>
+        <option value="mi">Mile</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="toUnit">To unit:</label>
+      <select id="toUnit">
+        <option value="m">Meter</option>
+        <option value="km">Kilometer</option>
+        <option value="mi">Mile</option>
+      </select>
+    </div>
+
+    <button onclick="convertUnits()">Convert</button>
+
+    <script>
+      function convertUnits() {
+        // Get the input value element.
+        var inputValue = document.getElementById("inputValue");
+
+        // Get the from unit element.
+        var fromUnit = document.getElementById("fromUnit");
+
+        // Get the to unit element.
+        var toUnit = document.getElementById("toUnit");
+
+        // Get the result element.
+        var result = document.getElementById("result");
+
+        result.innerText = window.function(inputValue, fromUnit, toUnit);
+      }
+    </script>
+
+    <div id="result"></div>
+  </body>
+</html>
